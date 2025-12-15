@@ -1,4 +1,4 @@
-# Firebase Studio
+# Rental-Insights
 
 This is a NextJS starter in Firebase Studio.
 
