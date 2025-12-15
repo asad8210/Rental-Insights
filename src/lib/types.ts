@@ -4,7 +4,7 @@ export interface BaseFeature {
   id: string;
   name: string;
   basePrice: number;
-  icon: FC<{ className?: string }>;
+  icon: string;
 }
 
 export interface Furniture extends BaseFeature {}
@@ -31,4 +31,9 @@ export type PredictionResult = {
 export type ServerActionResponse = {
   data?: PredictionResult;
   error?: string;
+};
+
+export type ObjectDetection = {
+    label: string;
+    confidence: number;
 };

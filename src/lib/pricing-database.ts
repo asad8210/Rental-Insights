@@ -1,17 +1,3 @@
-import {
-  Bed,
-  Armchair,
-  Fan,
-  Snowflake,
-  Wind,
-  CookingPot,
-  Bath,
-  Building,
-  Home,
-  Paintbrush,
-  BrickWall,
-} from 'lucide-react';
-import { TableIcon, DeskIcon, AlmirahIcon } from '@/components/icons';
 import type { FeatureCategory } from './types';
 
 export const PRICING_DATA: FeatureCategory[] = [
@@ -20,11 +6,11 @@ export const PRICING_DATA: FeatureCategory[] = [
     name: 'Furniture',
     type: 'multi',
     items: [
-      { id: 'bed', name: 'Bed', basePrice: 800, icon: Bed },
-      { id: 'chair', name: 'Chair', basePrice: 200, icon: Armchair },
-      { id: 'table', name: 'Table', basePrice: 300, icon: TableIcon },
-      { id: 'desk', name: 'Desk', basePrice: 400, icon: DeskIcon },
-      { id: 'almirah', name: 'Almirah', basePrice: 500, icon: AlmirahIcon },
+      { id: 'bed', name: 'Bed', basePrice: 800, icon: 'bed' },
+      { id: 'chair', name: 'Chair', basePrice: 200, icon: 'armchair' },
+      { id: 'table', name: 'Table', basePrice: 300, icon: 'table' },
+      { id: 'desk', name: 'Desk', basePrice: 400, icon: 'desk' },
+      { id: 'almirah', name: 'Almirah', basePrice: 500, icon: 'almirah' },
     ],
   },
   {
@@ -32,9 +18,9 @@ export const PRICING_DATA: FeatureCategory[] = [
     name: 'Appliances',
     type: 'multi',
     items: [
-      { id: 'fan', name: 'Fan', basePrice: 150, icon: Fan },
-      { id: 'cooler', name: 'Cooler', basePrice: 400, icon: Wind },
-      { id: 'ac', name: 'Air Conditioner', basePrice: 1500, icon: Snowflake },
+      { id: 'fan', name: 'Fan', basePrice: 150, icon: 'fan' },
+      { id: 'cooler', name: 'Cooler', basePrice: 400, icon: 'wind' },
+      { id: 'ac', name: 'Air Conditioner', basePrice: 1500, icon: 'snowflake' },
     ],
   },
   {
@@ -42,12 +28,12 @@ export const PRICING_DATA: FeatureCategory[] = [
     name: 'Structural Features',
     type: 'multi',
     items: [
-      { id: '1bhk', name: '1BHK', basePrice: 1000, icon: Home },
-      { id: '2bhk', name: '2BHK', basePrice: 2000, icon: Home },
-      { id: 'balcony', name: 'Balcony', basePrice: 500, icon: Building },
-      { id: 'attached-bathroom', name: 'Attached Bathroom', basePrice: 700, icon: Bath },
-      { id: 'small-kitchen', name: 'Small Kitchen', basePrice: 400, icon: CookingPot },
-      { id: 'medium-kitchen', name: 'Medium Kitchen', basePrice: 800, icon: CookingPot },
+      { id: '1bhk', name: '1BHK', basePrice: 1000, icon: 'home' },
+      { id: '2bhk', name: '2BHK', basePrice: 2000, icon: 'home' },
+      { id: 'balcony', name: 'Balcony', basePrice: 500, icon: 'building' },
+      { id: 'attached-bathroom', name: 'Attached Bathroom', basePrice: 700, icon: 'bath' },
+      { id: 'small-kitchen', name: 'Small Kitchen', basePrice: 400, icon: 'cooking-pot' },
+      { id: 'medium-kitchen', name: 'Medium Kitchen', basePrice: 800, icon: 'cooking-pot' },
     ],
   },
   {
@@ -55,8 +41,8 @@ export const PRICING_DATA: FeatureCategory[] = [
     name: 'Room Quality',
     type: 'multi',
     items: [
-      { id: 'furnished-floor', name: 'Furnished Floor', basePrice: 300, icon: BrickWall },
-      { id: 'good-walls', name: 'Good Wall Condition', basePrice: 200, icon: Paintbrush },
+      { id: 'furnished-floor', name: 'Furnished Floor', basePrice: 300, icon: 'brick-wall' },
+      { id: 'good-walls', name: 'Good Wall Condition', basePrice: 200, icon: 'paintbrush' },
     ],
   },
 ];

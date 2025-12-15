@@ -28,6 +28,7 @@ import { Separator } from '@/components/ui/separator';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import AppHeader from '@/components/layout/header';
 import AppFooter from '@/components/layout/footer';
+import FeatureIcon from '@/components/feature-icon';
 import placeholderImageData from '@/lib/placeholder-images.json';
 
 const MAX_FILES = 5;
@@ -243,7 +244,7 @@ export default function RentalInsightsPage() {
                   onCheckedChange={(checked) => handleStructuralFeatureChange(feature.id, checked as boolean)}
                 />
                 <Label htmlFor={feature.id} className="flex items-center gap-2 cursor-pointer">
-                  <feature.icon className="w-5 h-5 text-muted-foreground" />
+                  <FeatureIcon iconName={feature.icon} className="w-5 h-5 text-muted-foreground" />
                   {feature.name}
                 </Label>
               </div>
@@ -294,7 +295,7 @@ export default function RentalInsightsPage() {
           <div className="flex flex-wrap gap-3">
             {result.detectedFeatures.map(feature => (
               <div key={feature.id} className="flex items-center gap-2 rounded-full bg-muted px-3 py-1 text-sm">
-                <feature.icon className="w-4 h-4 text-muted-foreground" />
+                <FeatureIcon iconName={feature.icon} className="w-4 h-4 text-muted-foreground" />
                 <span>{feature.name}</span>
               </div>
             ))}
